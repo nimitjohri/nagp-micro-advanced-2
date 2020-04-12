@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: "jaeger-config-maps"
+  namespace: default
+  labels: 
+    app: jaeger
+data:
+  JAEGER_QUERY_API_URL: "http://jaeger-query"
+  JAEGER_COLLECTOR_API_URL: "http://jaeger-collector"
